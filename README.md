@@ -32,3 +32,12 @@ To compare TF-IDF and Count Vectorizer, we can take a basic example.
 
 
 ### **Difference between Stemming and Lemmatization** 
+- Stemming and Lemmatization are used to find the "stem" or "root" of a given word.
+- In a given corpus, for grammatical reasons, a word might be used in its many different forms. For example: eat, eaten, eating, eats, ate etc.
+- Stemming and Lemmatization is performed so that these words aren't treated as completely different words.
+- Stemming algorithms follow a specific set of rules and cut off suffixes from the beginning or end of the word to reach the "stem" words. For example Studies and studying are both stemmed to studi.
+- Lemmatization is a more complicated process and it involves an actual morphological analysis of the word. It returns the base or dictionary form of a word called a lemma.
+- For example in case of the word "saw" a stemmer might return just "s" or "saw" as is, but a lemmatizer will return "saw" or "see based on whether it was used in the context as a noun or a verb.
+- As a result, lemmatization tends to be more accurate and better conveys what the word could mean but it is also more computationally expensive.
+- Therefore in tasks where accuracy is more important, lemmatization usually performs better.
+- But in some cases such as indexing a massive number of documents in a search engine, stemming might be preferred as it is much faster, and much easier to implement.
