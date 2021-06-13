@@ -41,3 +41,22 @@ To compare TF-IDF and Count Vectorizer, we can take a basic example.
 - As a result, lemmatization tends to be more accurate and better conveys what the word could mean but it is also more computationally expensive.
 - Therefore in tasks where accuracy is more important, lemmatization usually performs better.
 - But in some cases such as indexing a massive number of documents in a search engine, stemming might be preferred as it is much faster, and much easier to implement.
+- The difference between the two can be seen in the following image:
+![l-s-compare](images/lemma-vs-stem.JPG)
+- As we can see, lemmatization tries to maintain more information while stemming fails to notice that "United States" is a proper noun.
+
+### Basic model with just TF-IDF vectorization  
+Two models were made with just TF-IDF vectorization
+- First model set a limit on the vector length=length of longest sentence in the training data.
+  - It had an accuracy of 68% on the test set
+  - ![limit-tfidf-accuracy](images/limit-tfidf-accuracy.jpg)
+  - ![limit-tfidf-loss](images/limit-tfidf-loss.jpg)
+  - As we can see accuracy on the test set and training set remains around the same after the 5th epoch without any major spikes.
+- In the 2nd model,no limit was set on the vector length and the model was allowed to create vectors for all words in the vocabulary
+  - It had an accuracy of 83.8% on the test set 
+  - ![no-limit-tfidf-accuracy](images/no-limit-tfidf-accuracy.jpg)
+  - ![no-limit-tfidf-loss](images/n0-limit-tfidf-loss.jpg)
+  - As we can see, training accuracy keeps increasing while accuracy on test set remains the same. This overfitting can be fixed through early stopping.
+
+
+### **LSTM**
