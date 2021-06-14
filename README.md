@@ -105,7 +105,15 @@ An LSTM model is made with a 50 unit LSTM layer after the embedding layer
 - ![LSTM loss](images/LSTM-loss.jpg)
 - As we can see, the model reaches 100% accuracy on the training data almost immediately
 
+### **LSTM Model with TF-IDF**
+A final model is made without embedding and only TF-IDF vectorization
+- Train and Test data has to be reshaped to fit into a keras LSTM layer
+- Keras LSTM layer requires 3 Dimensional input in the form (samples, timesteps, features)
+- The accuracy of this model is 85.6%
+- ![LSTM TFIDF accuracy](images/tfidf-lstm-accuracy.jpg)
+- ![LSTM TFIDF loss](images/tfidf-lstm-loss.jpg)
+
 
 ### **Notes**
 - The same random state(7) is taken for all train-test splits to ensure that the same data is used for training and testing in all notebooks
-- The accuracy of models seems to peak at 84%
+- The accuracy of models seems to peak at 85%

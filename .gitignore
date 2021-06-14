@@ -69,3 +69,14 @@ logs-tf-embed-2/fit/train/plugins/profile/2021_06_14_05_40_50/LAPTOP-5DV4FNVP.tr
 logs-tf-embed-2/fit/train/plugins/profile/2021_06_14_05_40_50/LAPTOP-5DV4FNVP.xplane.pb
 logs-tf-embed-2/fit/validation/events.out.tfevents.1623647140.LAPTOP-5DV4FNVP.15036.23199.v2
 logs-tf-embed-2/fit/validation/events.out.tfevents.1623649251.LAPTOP-5DV4FNVP.15924.5668.v2
+logs-tfidf-1/fit/train/events.out.tfevents.1623677288.LAPTOP-5DV4FNVP.14988.94.v2
+logs-tfidf-LSTM/fit/train/events.out.tfevents.1623681059.LAPTOP-5DV4FNVP.17112.94.v2
+logs-tfidf-LSTM/fit/train/events.out.tfevents.1623681065.LAPTOP-5DV4FNVP.profile-empty
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.input_pipeline.pb
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.kernel_stats.pb
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.memory_profile.json.gz
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.overview_page.pb
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.tensorflow_stats.pb
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.trace.json.gz
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.xplane.pb
+logs-tfidf-LSTM/fit/validation/events.out.tfevents.1623681065.LAPTOP-5DV4FNVP.17112.3226.v2
