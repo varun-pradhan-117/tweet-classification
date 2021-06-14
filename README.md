@@ -66,5 +66,41 @@ Two models were made with just TF-IDF vectorization
 - ![weighted accuracy](images/weighted-accuracy.jpg)
 - ![weighted loss](images/weighted-loss.jpg)
 
+### Model with tensorflow vectorization and embedding
+The first model uses tensorflow's TextVectorization and Embedding layers
+- This requires the addition of a 1D pooling layer to reduce the dimensionality of embedded data
+- The model has an accuracy of 83%
+- ![tensorflow embed accuracy](images/tf-embed-accuracy.jpg)
+- ![tensorflow embed loss](images/tf-embed-loss.jpg)
+- As we can see, training accuracy keeps increasing while accuracy on test set remains the same. This overfitting can be fixed through early stopping  
+
+The second model makes use of early stopping
+- An additional early stopping callback is added 
+- This model stops training after the 5th epoch
+- This model has an accuracy of 84%
+- ![tensorflow earlystop accuracy](images/early-stop-accuracy.JPG)
+- ![tensorflow earlystop loss](images/early-stop-loss.jpg)
 
 ### **LSTM**
+- Since tweets tend to be short and discuss a wide variety of topics, it's difficult to obtain a lot of useful features for classification using normal text vectorization, embeddings or TF-IDF models.
+- As a result it might be better if a feature can be involved in many possible inputs.
+- This guides us towards RNNs since an RNN can learn from the current input as well as previous inputs.
+- But RNNs have a known downside, i.e. they suffer from vanishing gradient problem resulting in a shorter memory.
+- **This short term memory problem is resolved using LSTMs**
+- LSTMs have an additional signal called "cell memory".
+- This cell memory allows the LSTM to decide whether certain features should be passed ahead to the next cell or they should be forgotten.
+- It uses a gate mechanism to overcome the problem of the vanishing gradient.
+- Gates are way to optionally let information through to the cell and consist of smaller neural nets with either sigmoid or tanh as the activation function.
+- An LSTM Unit at time t looks like:  
+![LSTM Unit](images/The-structure-of-the-LSTM-unit.jpg)  
+- The input gate decides what new information is going to be stored in the cell state
+- The forget gate determines what features are no longer needed and can be forgotten
+- The output gate passes the final output of the cell and the information being sent ahead
+
+### **LSTM Model**
+An LSTM model is made with a 50 unit LSTM layer after the embedding layer
+- 1D Pooling layer is removed as LSTM layer expects 3 dimensional data
+- The accuracy of the resulting model is 83%
+- ![LSTM accuracy](images/LSTM-accuracy.jpg)
+- ![LSTM loss](images/LSTM-loss.jpg)
+- As we can see, the model reaches 100% accuracy on the training data almost immediately
