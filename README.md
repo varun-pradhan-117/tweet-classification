@@ -104,3 +104,8 @@ An LSTM model is made with a 50 unit LSTM layer after the embedding layer
 - ![LSTM accuracy](images/LSTM-accuracy.jpg)
 - ![LSTM loss](images/LSTM-loss.jpg)
 - As we can see, the model reaches 100% accuracy on the training data almost immediately
+
+
+### **Notes**
+- The same random state(7) is taken for all train-test splits to ensure that the same data is used for training and testing in all notebooks
+- The accuracy of models seems to peak at 84%
