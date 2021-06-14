@@ -57,6 +57,14 @@ Two models were made with just TF-IDF vectorization
   - ![no-limit-tfidf-accuracy](images/no-limit-tfidf-accuracy.jpg)
   - ![no-limit-tfidf-loss](images/n0-limit-tfidf-loss.jpg)
   - As we can see, training accuracy keeps increasing while accuracy on test set remains the same. This overfitting can be fixed through early stopping.
+  
+### Model with TF-IDF weighted embedding
+- Another model is made where TF-IDF vectors are generated for the data.
+- The GloVe vectors for all TF-IDF terms are obtained using spacy
+- The TF-IDF vectors are multiplied by the GloVe vectors for those TF-IDF terms to obtain TF-IDF weighted embeddings for the data
+- It had an accuracy of 72.1% on the test set
+- ![weighted accuracy](images/weighted-accuracy.jpg)
+- ![weighted loss](images/weighted-loss.jpg)
 
 
 ### **LSTM**
