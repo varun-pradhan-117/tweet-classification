@@ -80,3 +80,9 @@ logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.te
 logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.trace.json.gz
 logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_14_14_31_05/LAPTOP-5DV4FNVP.xplane.pb
 logs-tfidf-LSTM/fit/validation/events.out.tfevents.1623681065.LAPTOP-5DV4FNVP.17112.3226.v2
+*.v2
+*.pb
+logs-tfidf-1/fit/train/plugins/profile/2021_06_30_03_38_22/LAPTOP-5DV4FNVP.memory_profile.json.gz
+logs-tfidf-1/fit/train/plugins/profile/2021_06_30_03_38_22/LAPTOP-5DV4FNVP.trace.json.gz
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_30_05_54_08/LAPTOP-5DV4FNVP.memory_profile.json.gz
+logs-tfidf-LSTM/fit/train/plugins/profile/2021_06_30_05_54_08/LAPTOP-5DV4FNVP.trace.json.gz
